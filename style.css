@@ -127,7 +127,7 @@ i {
 .skills .icon {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: fit-content;
     padding: 20px;
@@ -145,24 +145,19 @@ i {
     font-size: 24px;
 }
 
-.skills .icon img {
-    width: 36px;
-    height: 36px;
-}
-
 .photoshop-icon {
-    width: 36px;
-    height: 36px;
+    width: 44px;
+    height: 44px;
     scale: 1.5;
 }
 .photoshop-icon .background {
-  fill: #1e1e1e; /* Photoshop blue background */
+  fill: #1e1e1e; 
 
 }
 
 .photoshop-icon .text {
   
-  fill: white; /* Text color */
+  fill: white;
   transition: fill 0.3s ease;
 }
 
