@@ -163,6 +163,6 @@ i {
   transition: fill 0.3s ease;
 }
 
-.photoshop-icon:hover .text {
+.icon:hover .photoshop-icon .text {
   fill: orange;
 }
