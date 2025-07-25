@@ -7,6 +7,31 @@ html {
     scroll-padding-top: var(--scroll-padding, 64px);
 }
 
+section {
+
+    min-height: calc(100vh - var(--scroll-padding, 64px));
+    /* Make each section take full viewport height minus nav height */
+    display: flex;
+    /* Use flexbox for content centering */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    /* Snap to the start of each section */
+    padding: 1.5rem;
+    /* p-6 */
+    padding-top: calc(1.5rem + var(--scroll-padding, 64px));
+    /* Add padding to prevent content from hiding behind sticky nav, adjusted for p-6 */
+    box-sizing: border-box;
+
+    margin-left: auto;
+    /* mx-auto */
+    margin-right: auto;
+    /* mx-auto */
+    max-width: 60%;
+
+}
+
 body {
     background-color: #121212;
     color: #ffffff;
@@ -55,30 +80,7 @@ li {
     font-size: 24px;
 }
 
-section {
 
-    min-height: calc(100vh - var(--scroll-padding, 64px));
-    /* Make each section take full viewport height minus nav height */
-    display: flex;
-    /* Use flexbox for content centering */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    scroll-snap-align: start;
-    /* Snap to the start of each section */
-    padding: 1.5rem;
-    /* p-6 */
-    padding-top: calc(1.5rem + var(--scroll-padding, 64px));
-    /* Add padding to prevent content from hiding behind sticky nav, adjusted for p-6 */
-    box-sizing: border-box;
-
-    margin-left: auto;
-    /* mx-auto */
-    margin-right: auto;
-    /* mx-auto */
-    max-width: 60%;
-
-}
 
 
 h2 {
@@ -86,6 +88,13 @@ h2 {
     font-weight: 500;
     color: orange;
 }
+
+h3 {
+    font-size: 32px;
+    font-weight: 500;
+    color: orange;
+}
+
 
 .about-me {
     display: flex;
@@ -120,6 +129,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
     padding: 20px;
     border-radius: 20px;
     background-color: #1e1e1e;
@@ -224,4 +234,54 @@ i {
 }
 .skills-description {
     text-align: center;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+
+}
+
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    @media (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
+
+    gap: 20px;
+}
+.project3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.project3 .frame {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.project img {
+    width: auto;
+    height: 400px;
+}
+
+.project3 img {
+    width: auto;
+    max-height: 400px;
 }
