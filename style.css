@@ -169,7 +169,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 
 }
 
@@ -178,7 +178,7 @@ span {
     flex-wrap: wrap;
     justify-content: center;
     /* centers wrapped lines */
-    gap: 40px;
+    gap: 80px;
     /* space between icons */
     margin: 10px auto;
 
@@ -186,11 +186,13 @@ span {
 
 i {
 
-    font-size: 36px;
+    font-size: 80px;
 
 }
 
 .skills .icon {
+    width: 15%;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,8 +215,8 @@ i {
 }
 
 .photoshop-icon {
-    width: 44px;
-    height: 44px;
+    width: 100px;
+    height: 100px;
     scale: 1.5;
 }
 
@@ -273,9 +275,10 @@ i {
     height: 400px;
 }
 
-.project3 img {
+.project3 img  {
     width: auto;
     max-height: 400px;
+    min-height: 200px;
 }
 
 .project2 .frame , .project1 .frame {
@@ -287,4 +290,26 @@ i {
     padding: 40px;
 
 
+}
+
+.project2 .text , .project1 .text , .project3 .text {
+ text-align: center;
+}
+
+.contact {
+
+    width: 80%;
+    min-height: calc(100vh - 100px);
+    margin: 50 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+ 
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.contact a {
+    color: #ffffff;
 }
