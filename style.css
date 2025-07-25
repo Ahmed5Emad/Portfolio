@@ -236,15 +236,6 @@ i {
     text-align: center;
 }
 
-#projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-
-}
-
 
 .project {
     display: flex;
@@ -273,6 +264,7 @@ i {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
     gap: 10%;
 }
 
@@ -284,4 +276,15 @@ i {
 .project3 img {
     width: auto;
     max-height: 400px;
+}
+
+.project2 .frame , .project1 .frame {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+
 }
