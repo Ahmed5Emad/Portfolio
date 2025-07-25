@@ -15,9 +15,9 @@ It serves as:
 ## 🛠️ Tech Stack
 
 - **HTML5** / **CSS3**
-- **JavaScript** / **TypeScript**
+- **JavaScript**
 - **Figma** – for design wireframes and mockups
-- **GitHub Pages** or **Vercel/Netlify** for deployment
+- **GitHub Pages** for deployment
 
 > 💡 *Note: You can explore the live version [here](https://ahmed5emad.github.io/Portfolio/)*  
 
