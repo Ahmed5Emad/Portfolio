@@ -1,3 +1,13 @@
+// Add event listeners to the navbar links to scroll to the sections
+document.querySelectorAll('nav a').forEach(el => {
+    el.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(el.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const typedOutput = document.getElementById('typed-output');
     const cursorElement = document.getElementById('cursor');

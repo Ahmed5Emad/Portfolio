@@ -1,3 +1,12 @@
+html {
+    scroll-behavior: smooth;
+    /* Ensures smooth scrolling when clicking nav links */
+    scroll-snap-type: y mandatory;
+    /* Enable vertical scroll snapping, mandatory means it will always snap */
+    /* This variable will be set by JavaScript to account for the sticky nav bar's height */
+    scroll-padding-top: var(--scroll-padding, 64px);
+}
+
 body {
     background-color: #121212;
     color: #ffffff;
@@ -10,6 +19,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 nav ul {
@@ -45,12 +56,28 @@ li {
 }
 
 section {
-    width: 60%;
-    height: 100vh;
-    margin: auto;
+
+    min-height: calc(100vh - var(--scroll-padding, 64px));
+    /* Make each section take full viewport height minus nav height */
     display: flex;
+    /* Use flexbox for content centering */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: start;
+    /* Snap to the start of each section */
+    padding: 1.5rem;
+    /* p-6 */
+    padding-top: calc(1.5rem + var(--scroll-padding, 64px));
+    /* Add padding to prevent content from hiding behind sticky nav, adjusted for p-6 */
+    box-sizing: border-box;
+
+    margin-left: auto;
+    /* mx-auto */
+    margin-right: auto;
+    /* mx-auto */
+    max-width: 60%;
+
 }
 
 
@@ -139,8 +166,10 @@ span {
 .icons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* centers wrapped lines */
-    gap: 40px; /* space between icons */
+    justify-content: center;
+    /* centers wrapped lines */
+    gap: 40px;
+    /* space between icons */
     margin: 10px auto;
 
 }
@@ -192,4 +221,7 @@ i {
 
 .icon:hover .photoshop-icon .text {
     fill: orange;
+}
+.skills-description {
+    text-align: center;
 }
