@@ -296,20 +296,14 @@ i {
  text-align: center;
 }
 
-.contact {
-
-    width: 80%;
-    min-height: calc(100vh - 100px);
-    margin: 50 auto;
+.contact-info {
+    
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
- 
+    padding: 80px;
+    border-radius: 20px;
     background-color: #1e1e1e;
-    color: #ffffff;
-}
-
-.contact a {
-    color: #ffffff;
+    gap: 20px;
 }
