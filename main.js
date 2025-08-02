@@ -165,13 +165,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const icons = document.querySelectorAll('.icon');
 const descriptions = {
-    'css': 'I use CSS for styling and layout. I create responsive and accessible designs.',
-    'figma': 'I use Figma for designing UI/UX experiences. I create prototypes and high-fidelity designs for web and mobile applications.',
-    'html': 'I use HTML for structuring and organizing content. I create semantic and accessible HTML.',
-    'photoshop': 'I use Photoshop for creating visual elements. I create logos, icons, and other visual elements for web and mobile applications.',
-    'js': 'I use JavaScript for adding interactivity and functionality. I create dynamic and responsive web applications.',
-    'github': 'I use GitHub for version control. I collaborate with other developers and manage different versions of my code.',
-    'illustrator': 'I use Illustrator for vector design. I create logos, illustrations, and scalable graphics.',
+    'css': 'Used for styling and layout. It helps me create responsive and accessible designs.',
+    'figma': 'used for designing UI/UX experiences. It helps me create prototypes and high-fidelity designs for web and mobile applications.',
+    'html': 'Used for structuring and organizing content. It helps me create semantic and accessible HTML.',
+    'photoshop': 'Used for creating visual elements. It helps me create logos, icons, and other visual elements for web and mobile applications.',
+    'js': 'Used for adding interactivity and functionality. It helps me create dynamic and responsive web applications.',
+    'github': 'Used for version control. It helps me collaborate with other developers and manage different versions of code.',
+    'illustrator': 'Used for vector design. It helps me create logos, illustrations, and scalable graphics.',
 };
 
 icons.forEach(icon => {
